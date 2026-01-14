@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# Indica la ruta de tu sitemap para ayudar a Google
-Sitemap: https://www.mudanzasmostoles.es/sitemap.xml
+# Ruta actualizada al dominio real
+Sitemap: https://mudanzasmostoles.vercel.app/sitemap.xml
