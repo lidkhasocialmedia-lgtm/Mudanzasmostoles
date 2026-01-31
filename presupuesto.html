@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto Gratis | Mudanzas Móstoles - Tu Mudanza al Mejor Precio</title>
+    <meta name="description" content="Solicita tu presupuesto gratuito para mudanzas, portes o guardamuebles en Móstoles y Madrid. Respuesta rápida en menos de 1 hora.">
+    <meta name="keywords" content="presupuesto mudanza mostoles, precio mudanza madrid, portes baratos, calcular mudanza">
+    
+    <link rel="canonical" href="https://mudanzasmostoles.vercel.app/presupuesto" />
+
+    <link rel="icon" type="image/png" href="https://i.ibb.co/Rpv8hbqy/WE-DD-INGS.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mudanzasmostoles.es/presupuesto.html">
+    <meta property="og:title" content="Presupuesto Gratis | Mudanzas Móstoles">
+    <meta property="og:description" content="Solicita tu presupuesto personalizado sin compromiso. Expertos en mudanzas en Móstoles y Madrid.">
+    <meta property="og:image" content="https://i.ibb.co/Rpv8hbqy/WE-DD-INGS.png">
+    <meta property="og:site_name" content="Mudanzas Móstoles">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        #popup-thanks { display: none; }
+
+        /* Estilos para el menú móvil */
+        #mobile-menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            gap: 1rem;
+        }
+        #mobile-menu.active { display: flex; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed top-0 w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center relative">
+            <a href="/" class="text-2xl font-bold tracking-tight text-blue-600 uppercase">MUDANZAS<span class="text-slate-800">MÓSTOLES</span></a>
+            
+            <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wide items-center">
+                <a href="/" class="text-slate-600 hover:text-blue-600 transition">Inicio</a>
+                <a href="/servicios" class="text-slate-600 hover:text-blue-600 transition">Servicios</a>
+                <a href="/presupuesto" class="bg-blue-600 text-white px-5 py-2 rounded-full shadow-lg shadow-blue-200">Presupuesto Gratis</a>
+            </div>
+
+            <button id="hamburger" class="md:hidden flex flex-col gap-1.5 focus:outline-none">
+                <span class="w-6 h-0.5 bg-slate-800"></span>
+                <span class="w-6 h-0.5 bg-slate-800"></span>
+                <span class="w-6 h-0.5 bg-slate-800"></span>
+            </button>
+
+            <div id="mobile-menu" class="md:hidden shadow-xl">
+                <a href="/" class="font-bold text-slate-800 border-b pb-2">Inicio</a>
+                <a href="/servicios" class="font-bold text-slate-800 border-b pb-2">Servicios</a>
+                <a href="/presupuesto" class="bg-blue-600 text-white px-5 py-3 rounded-xl text-center font-bold">Presupuesto Gratis</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-12 bg-white px-6 border-b border-slate-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl font-extrabold mb-4">Te damos un presupuesto personalizado</h1>
+            <p class="text-lg text-slate-600">Rellena los datos y nuestro equipo te enviará una oferta personalizada sin compromiso.</p>
+        </div>
+    </header>
+
+    <section id="contacto" class="py-16 px-6 bg-slate-50">
+        <div class="max-w-3xl mx-auto bg-white p-10 md:p-16 rounded-[2rem] border border-slate-200 shadow-xl shadow-slate-200/50">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl font-bold mb-2">Formulario de Solicitud</h2>
+                <p class="text-slate-500">Recibe una respuesta en menos de 1 hora.</p>
+            </div>
+            
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+            <form id="google-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfBnEw0aLuzmshBfWv9KsmJImgPiN3350L_6F9vIDwviHS4Fg/formResponse" method="POST" target="hidden_iframe" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" name="entry.1703098158" required placeholder="Tu Nombre" class="w-full p-4 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none transition">
+                    <input type="tel" name="entry.1307959963" required placeholder="Teléfono" class="w-full p-4 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none transition">
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" name="entry.2062616032" required placeholder="Origen (Ej: Móstoles)" class="w-full p-4 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none transition">
+                    <input type="text" name="entry.926274399" required placeholder="Destino (Ej: Alcorcón)" class="w-full p-4 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none transition">
+                </div>
+                <textarea name="entry.211672486" required rows="4" placeholder="¿Qué necesitas trasladar? (Ej: Un piano y 10 cajas)" class="w-full p-4 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none transition"></textarea>
+                
+                <div class="flex items-start gap-3">
+                    <input type="checkbox" required id="data_consent" class="mt-1 w-5 h-5 accent-blue-600">
+                    <label for="data_consent" class="text-sm text-slate-600 leading-tight">Acepto la cesión de mis datos al transportista con el fin exclusivo de ponerme en contacto conmigo para el presupuesto de mudanza.</label>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 text-white p-5 rounded-xl font-bold text-lg hover:bg-blue-700 transition shadow-lg shadow-blue-600/20">Enviar Solicitud Gratis</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 text-center">
+            <div>
+                <div class="text-3xl mb-4">📞</div>
+                <h4 class="font-bold mb-2">Te contactaremos telefónicamente</h4>
+                <p class="text-slate-600">Un agente revisará tu solicitud para ajustar el precio al máximo.</p>
+            </div>
+            <div>
+                <div class="text-3xl mb-4">⏱️</div>
+                <h4 class="font-bold mb-2">Horario de Atención</h4>
+                <p class="text-slate-600">Lunes a Domingo<br>de 08:00 a 20:00</p>
+            </div>
+            <div>
+                <div class="text-3xl mb-4">📍</div>
+                <h4 class="font-bold mb-2">Área de Servicio</h4>
+                <p class="text-slate-600">Móstoles, Madrid y toda la periferia (A-5, M-50, M-40).</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="popup-thanks" class="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-slate-900/60 backdrop-blur-sm">
+        <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl max-w-sm text-center">
+            <div class="text-5xl mb-4">✅</div>
+            <h3 class="text-2xl font-bold mb-4">¡Gracias!</h3>
+            <p class="text-slate-600 mb-8">En breves nos pondremos en contacto contigo para darte un presupuesto.</p>
+            <button onclick="document.getElementById('popup-thanks').style.display='none'" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold">Cerrar</button>
+        </div>
+    </div>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="text-2xl font-bold text-white mb-6 uppercase">MUDANZASMÓSTOLES</div>
+            <p class="mb-8">Servicio líder en mudanzas locales en la Comunidad de Madrid.</p>
+            <p class="text-xs">&copy; 2026 Mudanzas Móstoles. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica Menú Hamburguesa
+        const btn = document.getElementById('hamburger');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+
+        // Cerrar menú al hacer click en enlace móvil
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active');
+            });
+        });
+
+        document.getElementById('google-form').onsubmit = function() {
+            document.getElementById('popup-thanks').style.display = 'flex';
+        };
+    </script>
+
+</body>
+</html>
